@@ -5,7 +5,17 @@ const allCountries = ()=>{
 }
 
 const displayCountries=(countries)=>{
-   console.log(countries)
+   console.log(countries[0])
+   const countryHtml= countries.map(country=>getCountryHtml(country));
+}
+
+const getCountryHtml=(country)=>{
+    return`
+    <div>
+    <h2>${country.name.common}</h2>
+    </div>
+    
+    `
 }
 
 allCountries()
