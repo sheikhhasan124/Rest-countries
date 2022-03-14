@@ -21,3 +21,17 @@
 .country img{
     width: 200px;
 }
+@media screen and (max-width:900px){
+    .countries{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+}
+@media screen and (max-width:600px){
+    .countries{
+        display: grid;
+        grid-template-columns: auto;
+       
+    }
+}
