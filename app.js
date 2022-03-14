@@ -7,6 +7,8 @@ const allCountries = ()=>{
 const displayCountries=(countries)=>{
    console.log(countries[0])
    const countryHtml= countries.map(country=>getCountryHtml(country));
+   let container = document.getElementById('container');
+   container.innerHTML= countryHtml.join(' ');
 }
 
 const getCountryHtml=(country)=>{
